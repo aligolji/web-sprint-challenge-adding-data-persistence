@@ -42,19 +42,25 @@ A `task` is one of the steps needed to complete the project. We want to store th
 
 Commit your code regularly and meaningfully. This helps both you (in case you ever need to return to old code for any number of reasons) and your team lead as the evaluate your solution.
 
-## Interview Questions
+## ⏩ Interview Questions  ➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain the difference between `Relational Databases` and `SQL`.
+    ⏩A Relational Database is a database which stores data formatted into rows and columns. SQL is a language which is used to manage the database and data stored within it.
 
 2. Why do tables need a `primary key`?
+    ⏩To uniquily identify each record within a table. This will work to prevent duplicate record entries into tables and less messy data management.
 
 3. What is the name given to a table column that references the primary key on another table.
+    ⏩This column is called a Foreign Key.
 
 4. What do we need in order to have a _many to many_ relationship between two tables.
+    ⏩We need an INTERMEDIARY TABLE which holds the foreign keys.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
+
+➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡➡⏪
 
 ## Instructions
 

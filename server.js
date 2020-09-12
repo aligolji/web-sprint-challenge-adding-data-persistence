@@ -2,8 +2,9 @@ const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
 
-
-//const routers go here
+const projectRouter = require('./routers/projectRouter');
+const taskRouter = require('./routers/taskRouter');
+const resourceRouter = require('./routers/resourceRouter');
 
 const server = express();
 
@@ -11,7 +12,9 @@ server.use(express.json());
 server.use(helmet());
 server.use(cors());
 
-//server.use router api's go here
+server.use('/api/projects', projectRouter);
+server.use('/api/tasks', taskRouter);
+server.use('/api/resources', resourceRouter);
 
 server.get('/', (req, res) => {
     res.send(`

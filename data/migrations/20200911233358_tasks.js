@@ -12,12 +12,12 @@ exports.up = function (knex) {
                 .onDelete('RESTRICT')
                 .onUpdate('CASCADE');
 
-            tbl.string('Task Description', 250)
+            tbl.string('description', 256)
                 .notNullable();
 
-            tbl.string('Task Notes', 750);
+            tbl.string('notes', 512);
 
-            tbl.boolean('Task Complete')
+            tbl.boolean('completed')
                 .notNullable()
                 .defaultTo(false);
         });

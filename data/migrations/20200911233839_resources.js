@@ -4,12 +4,19 @@ exports.up = function (knex) {
         .createTable('Resources', tbl => {
             tbl.increments();
 
-            tbl.string('Resource Name', 220)
+            tbl.integer('project_id')
+            .unsigned()
+            .references('id')
+            .inTable('projects')
+            .onDelete('RESTRICT')
+            .onUpdate('CASCADE');
+
+            tbl.string('name', 128)
                 .notNullable()
                 .index()
                 .unique();
 
-            tbl.string('Resource Description', 500);
+            tbl.string('description', 256);
         });
 };
 

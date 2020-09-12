@@ -1,0 +1,31 @@
+{
+  "name": "web-sprint-challenge-adding-data-persistence",
+  "version": "1.0.0",
+  "description": "Data Persistence Challenge",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aligolji/web-sprint-challenge-adding-data-persistence.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aligolji/web-sprint-challenge-adding-data-persistence/issues"
+  },
+  "homepage": "https://github.com/aligolji/web-sprint-challenge-adding-data-persistence#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.1.1",
+    "knex": "^0.21.5",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "knex-cleaner": "^1.3.1",
+    "nodemon": "^2.0.4"
+  }
+}
